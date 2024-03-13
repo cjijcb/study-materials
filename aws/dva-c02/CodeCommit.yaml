@@ -16,3 +16,4 @@ CodeCommit:
     - via IAM role + IAM STS
   Notification:
     - AWS SNS for commits
+    - AWS EventBridge for other events
