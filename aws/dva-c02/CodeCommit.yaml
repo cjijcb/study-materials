@@ -1,6 +1,7 @@
 CodeCommit:
-  - code repository like GitHub and GitLab
-  - use for version control of application
+  Description:
+    - code repository like GitHub and GitLab
+    - use for version control of application
   Core Components:
     Repository:
       - you upload files and codes
