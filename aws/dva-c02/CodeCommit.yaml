@@ -1,1 +1,18 @@
 CodeCommit:
+  - code repository like GitHub and GitLab
+  - use for version control of application
+  Authentication:
+    - SSH keys
+    - HTTPS
+  Authorization:
+    - IAM
+  Encryption:
+    At Rest:
+      - AWS KMS
+    In-Transit:
+      - SSH
+      - HTTPS
+  Cross-Account Access:
+    - via IAM role + IAM STS
+  Notification:
+    - AWS SNS for commits
