@@ -1,6 +1,9 @@
 CodeCommit:
   - code repository like GitHub and GitLab
   - use for version control of application
+  Components:
+    Code:
+      - you upload your codes here
   Authentication:
     - SSH keys
     - HTTPS
