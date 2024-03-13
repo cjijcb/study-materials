@@ -23,4 +23,4 @@ CodeCommit:
   Cross-Account Access:
     - via IAM role + IAM STS
   Notification:
-    - uses AWS SNS as target for detailed repository events like pull request, comments, branches operations.
+    - uses AWS SNS as target for detailed repository events notification like pull request, comments, branches operations.
