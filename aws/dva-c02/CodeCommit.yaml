@@ -2,13 +2,13 @@ CodeCommit:
   - code repository like GitHub and GitLab
   - use for version control of application
   Core Components:
-    Code:
-      - files and codes lives here
+    Repository:
+      - you upload files and codes
     Triggers:
       - limited repository event notification like creating branches or pushing codes
       - target services are AWS SNS and AWS Lambda
     Notification Rule:
-      !Ref Notification
+      - !Ref Notification
   Authentication:
     - SSH keys
     - HTTPS
@@ -23,4 +23,4 @@ CodeCommit:
   Cross-Account Access:
     - via IAM role + IAM STS
   Notification:
-    - AWS Lamdba or AWS SNS for repository events like push, delete, and create.
+    - uses AWS SNS as target for detailed repository events like pull request, comments, branches operations.
