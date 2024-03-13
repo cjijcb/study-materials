@@ -5,11 +5,6 @@ CodeCommit:
   CoreComponents:
     Repository:
       - you upload or push files and codes here.
-    Trigger:
-      - limited repository event notification like creating branches or pushing codes
-      - target services are AWS SNS and AWS Lambda
-    NotificationRule:
-    - uses AWS SNS as target for detailed repository events notification like pull request, comments, branches operations.
   Authentication:
     - SSH keys
     - HTTPS
@@ -24,5 +19,9 @@ CodeCommit:
   CrossAccountAccess:
     - via IAM role + IAM STS
   Notification:
-    - !Ref CoreComponents.Trigger
-    - !Ref CoreComponents.NotificationRule
+    NotificationRule:
+      - uses AWS SNS as target for detailed repository events notification like pull request, comments, branches operations.
+    Trigger:
+      - limited repository event notification like creating branches or pushing codes
+      - target services are AWS SNS and AWS Lambda
+    
