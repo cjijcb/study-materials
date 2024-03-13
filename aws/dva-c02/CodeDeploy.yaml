@@ -1,3 +1,15 @@
 CodeDeploy:
   Description:
     - automate application deployment.
+    - automated rollback capability
+  Deployment:
+    EC2:
+      In-PlaceDeployment:
+        - AllAtOnce
+        - HalfAtATime
+        - OneAtATime
+        - Custom
+      Blue-GreenDeployment:
+        - New ASG is created, ALB then switch to
+          the traffic from old ASG to new ASG
+      
