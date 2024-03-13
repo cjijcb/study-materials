@@ -4,7 +4,7 @@ CodeCommit:
     - use for version control of application
   Core Components:
     Repository:
-      - you upload files and codes
+      - you upload or push files and codes here.
     Triggers:
       - limited repository event notification like creating branches or pushing codes
       - target services are AWS SNS and AWS Lambda
